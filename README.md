@@ -36,4 +36,4 @@ Follow these steps to get the backend running on your local machine for prototyp
 git clone [https://github.com/our-team/soilsync-ai.git](https://github.com/our-team/soilsync-ai.git)
 cd soilsync-ai
 
-** Built with ☕ and 💻 in Nakuru County.
+* ** Built with ☕ and 💻 in Nakuru County.
