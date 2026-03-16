@@ -62,9 +62,9 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 ### 6. Run the Development Server
+The API will now be available at http://127.0.0.1:8000/api/v1/recommendation/.
 ```bash
 python manage.py runserver
-**The API will now be available at http://127.0.0.1:8000/api/v1/recommendation/.**
 
 ```
 * Built with ☕ and 💻 in Nakuru County.
