@@ -35,6 +35,36 @@ Follow these steps to get the backend running on your local machine for prototyp
 ```bash
 git clone [https://github.com/our-team/soilsync-ai.git](https://github.com/our-team/soilsync-ai.git)
 cd soilsync-ai
+```
+### 2. Set Up a Virtual Environment
+It is highly recommended to use a virtual environment to manage dependencies.
+
+```bash
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Train the AI Model
+Before running the server, you must generate the Machine Learning model file (soilsync_model.joblib).
+```bash
+python train_model.py
+```
+### 5. Setup the Database
+Run the standard Django migrations to build the local database schema.
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+### 6. Run the Development Server
+```bash
+python manage.py runserver
+**The API will now be available at http://127.0.0.1:8000/api/v1/recommendation/.**
 
 ```
 * Built with ☕ and 💻 in Nakuru County.
